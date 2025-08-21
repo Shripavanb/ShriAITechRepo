@@ -1,0 +1,272 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+
+<div>
+<!-----------------Row1-Top --------------------------------->
+    <div class="row" style="padding-left:6px; padding-right:6px">
+        <img src="~/img/HomePage_LandingImage2.png" />
+    </div>
+    <br />
+ <!------------------Row2--------------------------------->
+ <div class="row" style="padding-left:6px; padding-right:6px" >
+       <video autoplay="autoplay" muted loop>
+       <source src="~/Videos/Innovation_New.mp4" type= "video/mp4" />
+       </video>
+</div>
+<br />
+<!------------------Row3--------------------------------->
+    <div class="container-fluid row3_Servicesbg" >
+        <div class="text-center">
+        <h2>Services</h2>
+        <h4>What we offer</h4>
+        </div>
+        <br>
+    <div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Get in touch
+        </p>
+        <p>
+            <a class="btn btn-default" href="">Learn more &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Development</h2>
+        <p>
+            We are here to Help build your website, with our professional and expert team of developers.
+        </p>
+        <p>
+            <a class="btn btn-default" href="">Learn more &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>
+            We can easily find a web hosting company that offers the right mix of features and price for your applications.
+        </p>
+        <p>
+            <a class="btn btn-default" href="">Learn more &raquo;</a>
+        </p>
+    </div>
+</div>
+</div>
+    <br />
+<!------------------Row4--------------------------------->
+  <div class="container-fluid row4_Servicesbg">
+  <div class="row" >
+    <div class="col-md-4">
+        <h2>Software Services </h2>
+        <p>
+            Get in touch
+        </p>
+        <p>
+            <a class="btn btn-default" href="">Learn more &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>App Development </h2>
+        <p>
+            We are here to Help build your Apps, with our professional and expert team of developers.
+        </p>
+        <p>
+            <a class="btn btn-default" href="">Learn more &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>AI ML Advanced Services and Support </h2>
+        <p>
+            We are here to Help build and Support your AI, ML and Advanced Tech, with our professional and expert team of developers.
+        </p>
+        <p>
+            <a class="btn btn-default" href="">Learn more &raquo;</a>
+        </p>
+    </div>
+ 
+</div>
+<div class="row">
+         <div class="col-md-4">
+                <h2>Cloud Services </h2>
+                <p>
+                    We are here to Help build and Support your cloud based web and Application development.
+                </p>
+                <p>
+                    <a class="btn btn-default" href="">Learn more &raquo;</a>
+                </p>
+         </div>
+         <div class="col-md-4"></div>
+         <div class="col-md-4"></div>
+</div>
+</div>
+    <br />
+<!---------------------Our Clients-------------------->
+    <div class="container-fluid ourclientsbg">
+        <div class="row text-center">
+    <h2>Our Clients</h2>
+    </div>
+    <br />
+    <br />
+   <div class="">
+            <div class="col-md-4">
+                <h2>🎨 ColorBytes</h2>
+                <p>
+                    <a href="https://color-bytes.in/" target="_blank">color-bytes.in</a>
+                </p>
+            </div>
+@*     <div class="col-md-4">
+        <h2>Gayathri Events</h2>
+        <p>
+                <a href="https://gayathrievents.in/" target="_blank">gayathrievents.in</a>
+        </p>
+    </div> *@
+  
+    </div>
+</div>
+    <br />
+<!---------Our Support Service-------------------->
+    <div class="container-fluid oursupportservicebg">
+        <div class="row text-center">
+    <h2>Our Support Services</h2>
+    <br />
+    <br />
+    </div>
+    <div class="row_ourclients">
+        <div class="col-md-4">
+            <h2>Cloud GenZ</h2>
+            <p>
+                    <a href="https://cloudgenzapp-gee6h8hqdcfdgma0.canadacentral-01.azurewebsites.net/" target="_blank">cloudgenz.in</a>
+            </p>
+        </div>
+    </div>
+</div>
+    <br />
+<!--------------What Our Customers Say--------------------------------------->
+<div class="container-fluid" style="background-color:white">
+  <div class="row text-center">
+<h2>What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center; rowcustomersay" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Vaishnavi, CEO & Founder, ColorBytes</span></h4>
+        </div>
+        <div class="item">
+            <h4>"One word... WOW!!"<br><span style="font-style:normal;">Lohitha M, Founder, CloudGenZ</span></h4>
+        </div>
+        <div class="item">
+            <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Vijay B, Owner & Event Organiser, GayathriEvents</span></h4>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+<br />
+<br /></div>
+    <br />
+<!------------------Contact US------------------------------->
+<div class="container-fluid bg-grey; rowcontactus">
+    <h2 class="text-center">Contact</h2>
+    <div class="row">
+       <h2>Contact us and we'll get back to you within 24 hours.</h2>
+        <div class="col-sm-5">
+                <h3 class="text-white"><span class="glyphicon glyphicon-map-marker text-warning p-3"></span> Hyderabad, Telangana, India</h3>
+                <h3 class="text-white"><span class="glyphicon glyphicon-phone text-white p-3"></span> +91 8374499001</h3>
+                <h3 class="text-white"><span class="glyphicon glyphicon-envelope text-white p-3"></span> shripavanb@shriaitech.in</h3>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="10"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />  
+<!--------------Google Map------------------------>
+
+<div class="container-fluid">
+        <h2 class="text-center">Location</h2>
+
+    <div class="row">
+            <div class="col-sm-5">
+            <h2 class="text-center">Hyderabad, India</h2>
+            <h3 class="text-center"><a href="https://shriaitech.in/">shriaitech.in</a></h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1902.4492553329585!2d78.47491223881039!3d17.512357495849084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9aa9b4520c11%3A0x8f22c7a13b3885dc!2sPipe%20Line%20Rd%2C%20Satellite%20Township%2C%20Santa%20Sriram%20Estates%2C%20Jeedimetla%2C%20Hyderabad%2C%20Telangana%20500067!5e0!3m2!1sen!2sin!4v1748584317643!5m2!1sen!2sin" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-sm-2">
+                </div>
+            <div class="col-sm-5">
+                <h2 class="text-center">Stevenage, UK</h2>
+                <h3 class="text-center" ><a href="https://shriaitech.uk/" target="_blank">shriaitech.uk</a></h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184.02949849633157!2d-0.16998306004328245!3d51.92175647984545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48762916a02a64d9%3A0x4341e6e1cebe29fa!2sStevenage%2C%20UK!5e1!3m2!1sen!2sin!4v1753712624588!5m2!1sen!2sin" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+   </div>
+  
+</div>
+<br /> <br />
+</div><!----top shell-->
+<!---------------Script------------------------------------------------->
+<script>
+
+      /*-------Slide Show---------------------------------*/
+    $(document).ready(function(){
+     
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+        });
+      });
+    })
+    /*-------Google Map---------------------------------*/
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(17.512,78.47628),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    /*-------Landing video row 2---------------------------------*/
+   var video=getElementsByTagName('video');
+    function removeControls(video){
+      video.removeAttribute('controls');
+    }
+    window.onload=removeControls(video);
+     window.onload=onloadstart(video);
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
