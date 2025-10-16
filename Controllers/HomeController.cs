@@ -31,7 +31,7 @@ namespace ShriAITech.Controllers
         {
             return View();
         }
-        public IActionResult WebDevelopment()
+        public IActionResult JoinUs()
         {
             return View();
         }

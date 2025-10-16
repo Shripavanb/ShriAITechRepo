@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ShriAITech.Views.Home
 {
-    public class Web_DevelopmentModel : PageModel
+    public class JoinUsModel : PageModel
     {
         public void OnGet()
         {
