@@ -37,16 +37,12 @@
     background-image: url('../img/OurClientsbg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
-    height: 558px;
 }
 /*-------------Our Support Service-------------------------------------*/
 .oursupportservicebg {
     background-image: url('../img/ourSupportServicebg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 558px;
 }
 
 /*-------------Customer Say ----------------------------------*/
