@@ -1,0 +1,32 @@
+﻿/*body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #F5F7FB;
+    color: #1F2937;
+    line-height: 1.75;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}*/
+
+h1 {
+    text-align: center;
+    color: #0B5ED7;
+}
+
+h2 {
+    color: #4F46E5;
+    margin-top: 25px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 14px;
+    color: #6B7280;
+}

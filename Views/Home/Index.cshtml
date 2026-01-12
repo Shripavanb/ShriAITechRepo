@@ -200,21 +200,25 @@
         </div>
         <div class="col-sm-7">
             <div class="row">
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                </div>
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                </div>
-            </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="10"></textarea><br>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Send</button>
-                </div>
-            </div>
+                <form class="form">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+            
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="10"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-default pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                
         </div>
     </div>
+</div>
 </div>
 <br />  
 <!--------------Google Map------------------------>
@@ -238,7 +242,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184.02949849633157!2d-0.16998306004328245!3d51.92175647984545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48762916a02a64d9%3A0x4341e6e1cebe29fa!2sStevenage%2C%20UK!5e1!3m2!1sen!2sin!4v1753712624588!5m2!1sen!2sin" 
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div> *@
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.979184047233!2d78.48765887603234!3d17.508507083399454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b7e4eb5ef63%3A0xde8d3124fb1112bb!2sShri%20AI%20Tech!5e0!3m2!1sen!2sin!4v1763361959316!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.979184047233!2d78.48765887603234!3d17.508507083399454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b7e4eb5ef63%3A0xde8d3124fb1112bb!2sShri%20AI%20Tech!5e0!3m2!1sen!2sin!4v1763361959316!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
   
 </div>
@@ -246,7 +250,25 @@
 </div><!----top shell-->
 <!---------------Script------------------------------------------------->
 <script>
+    const formE1 = document.querySelector('.form');
+    formE1.addEventListener('submit', event=>{
+        event.preventDefault();
+        const formData = new FormData(formE1);
+        formData.get('name');
+        formData.get('email');
 
+        const data = Object.formEntries(formData);
+
+          fetch( 'https://docs.google.com/document/d/1b1o0-KLWiz6fbvSRgREwBKet3DGKPyS8Bn2wDoxZ29k/edit?usp=sharing',
+  {
+      method:'POST',
+      headers:{
+      'Content-Type':'application/json'
+      },
+      body:JSON.stringify(data)
+  });
+    });
+ 
       /*-------Slide Show---------------------------------*/
     $(document).ready(function(){
      
