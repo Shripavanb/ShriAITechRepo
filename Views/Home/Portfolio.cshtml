@@ -1,0 +1,114 @@
+﻿@page
+@model ShriAITech.Views.Home.PortfolioModel
+@{
+    //ViewData["Title"] = "Portfolio";
+}
+<link href="~/css/portfolio.css" rel="stylesheet" />
+<section class="portfolio-hero">
+    <div class="portfolio-hero-content">
+        <h1>Our Expertise & Portfolio</h1>
+        <p>Transforming visions into advanced technical solutions.</p>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="container">
+        <h2 class="section-title">Our Core Services</h2>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Custom business websites built with clean code, responsive design, and scalable architecture.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Software & Cloud Solutions</h3>
+                <p>End-to-end development: cloud platforms, scalable services, and enterprise integrations.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>App Development</h3>
+                <p>Native & cross-platform mobile apps designed for performance and engagement.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>AI & ML Advanced Tech</h3>
+                <p>Machine learning models, intelligence automation, and predictive insights.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="projects-section">
+    <div class="container">
+        <h2 class="section-title">Successful Client Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Project Sample 1 -->
+            <div class="project-card">
+                <img class ="card" src="~/img/colorbytes_logo.jpg" />
+                <h3>ColorBytes Digital Platform</h3>
+                <p>Custom web system for digital design services.</p>
+            </div>
+
+            <!-- Project Sample 2 -->
+            <div class="project-card">
+                <img class="card" src="~/img/cloudgenz_logo.jpg" />
+                <h3>CloudGenZ Web App</h3>
+                <p>Scalable cloud services platform supporting client operations.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="projects-section">
+    <div class="container">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Project Sample 1 -->
+            <div class="project-card">
+                <img class="card" src="~/img/shrifoods/newlogo_small_1.png" />
+                <h3>ShriFoods E-commerce Platform</h3>
+                <p>Custom web system for Food Delivery service.</p>
+            </div>
+
+            <!-- Project Sample 2 -->
+            <div class="project-card">
+                <img class="card" src="~/img/shririse/newlogo_small.png" />
+                <h3>ShriRise RealEstate</h3>
+                <p>Luxury Living Starts Here. Exclusive Premium Properties for Elite Lifestyle</p>
+            </div>
+            <!-- Project Sample 2 -->
+            <div class="project-card">
+                <img class ="card" src="~/img/shrigo/shrigo_logo11.png" />
+               
+                <h3>ShriGo Travel Service</h3>
+                <p>Cab service,Cab Rental services </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-section">
+    <div class="container">
+        <h2 class="section-title">What Clients Say</h2>
+        <blockquote class="testimonial">
+            <p>"Shri AI Tech delivered beyond expectations. The team is responsive and tech-savvy."</p>
+            <footer>— Vaishnavi, CEO ColorBytes</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+            <p>"Professional and timely. Highly recommended for custom development."</p>
+            <footer>— Lohitha, Founder CloudGenZ</footer>
+        </blockquote>
+    </div>
+</section>
+
+<section class="contact-cta-section">
+    <div class="container text-center">
+        <h2>Work With Us</h2>
+        <p>Got a project in mind? Let’s build something remarkable together.</p>
+        <a asp-page="/ContactUs" class="btn-cta">Contact Us</a>
+    </div>
+</section>
