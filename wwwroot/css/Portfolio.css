@@ -54,6 +54,10 @@
     flex: 1 1 45%;
     border: 1px solid rgba(0,0,0,0.08);
 }
+.project-card img{
+    max-width:150px;
+    max-height:auto;
+}
 
 /* Testimonial */
 .testimonial-section {
