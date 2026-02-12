@@ -2,139 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Shri AI Tech</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ShriAITech.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div class="container-fluid">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <a asp-controller="Home" asp-action="Index"><img src="~/img/shriaitech logo.png" style="height:100px; width:90px" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Products">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">ContactUs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">AboutUs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="JoinUs">JoinUs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Portfolio">Portfolio</a>
-                        </li>
-                   
-                    </ul>
-                </div>
-         </nav>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="~/img/logos/NewLogo.png" width="100" height="100" />
+                @* <img src="~/img/logos/chatgpt image feb 12, 2026, 09_34_15 pm.png" width="150" height="100" /> *@
+                <a asp-page="/Index">Shri<span>AI</span>Tech</a>
+            </div>
+
+            <nav class="nav-menu">
+                <a asp-page="/Index">Home</a>
+                <a asp-page="/Portfolio">Portfolio</a>
+                <a asp-page="/Services">Services</a>
+                <a asp-page="/Contact">Contact</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a asp-page="/Contact" class="btn-primary">Get Quote</a>
+            </div>
         </div>
     </header>
-    <div class="container-fluid">
-        <main role="main" >
-            @RenderBody()
-        </main>
-    </div>
-    <!-----------Refrence-Row--------------->
-    <div class="container-fluid referencebg">
-    
-       @* <hr style="border-top: 5px solid darkblue"  /> *@
-        <div class="container">
-            <div class="row">
-                 <div class="col-md-3">
-                <!-----------Logo and Address ------->
-                    <div class="row-cols-1">
-                         <img src="~/img/CompanyTradeImage.jpg" />
-                    </div>
-                        <div class="row-cols-1">
-                        <p><span class="glyphicon glyphicon-map-marker text-warning p-3"></span>Sri Sai Enclave, Spring Fields Colony, Jeedimetla</p>
-                        <p>Hyderabad, Telangana 500067, India</p>
-                        </div>
-                </div>
-                <!-----------Social media------->
-                <div class="col-md-3">
-                    <h3>Media</h3>
-                    <hr />
-                    <ul>
-                        <li style="display:block"><a href="#" class="icon-link"><i class="bi bi-linkedin"></i></a></li>
-                            <li style="display:block"><a href="https://www.instagram.com/shriaitech?igsh=MThicHV3NnVzMWlzZA==" target="_blank" class="icon-link"><i class="bi bi-instagram"> Instagram </i></a></li>
-                        <li style="display:block"><a href="#" class="icon-link"><i class="bi bi-twitter"></i></a></li>
-                        <li style="display:block"><a href="#" class="icon-link"><i class="bi bi-facebook"></i></a></li>
-                    </ul>
-                </div>
-                <!-----------Company------->
-                <div class="col-md-3">
-                   <h3>Company</h3> 
-                   <hr />
-                   <ul>
-                       <li style="display:block"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                       <li style="display:block"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Products">Products</a></li>
-                       <li style="display:block"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
-                       <li style="display:block"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
-                       <li style="display:block"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a></li>
-                   </ul>
-                </div>
-                <!-----------Contact Us------->
-                <div class="col-md-3">
-                   <h3>Contact</h3>
-                   <hr />
-                   <ul>
-                            <li style="display:block"><a><span class="glyphicon glyphicon-phone p-3"></span> +91 8374499001</a></li>
-                            <li style="display:block"><a><span class="glyphicon glyphicon-envelope p-3"></span> shripavanb@shriaitech.in</a></li>
-                   </ul>
-                    </div>
-                </div>
-                <hr />
-            <div class="row">
-                <h3 style="background-color:brown;color:white"> Registered & Certified Under</h3>
-                    <div class="col-md-3" style="border-right:solid;color:white; text-align:justify" >
-                        <h3>MSME </h3>
-                    </div>
-                <div class="col-md-3" >
-                        <img src="~/img/duns_registered seal.png" style="align-content:center"/>
-                    </div>
-                <div class="col-md-3" style="border-left:solid;color:white">
-                    <h3 style="color:white; text-align:justify">Trade License</h3>
-                    </div>
-                    <div class="col-md-3">
-                       
-                    </div>
-                </div>
+
+    <!-- Page Content -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Shri AI Tech</h3>
+                <p>Building intelligent digital solutions with modern technology.</p>
             </div>
-    
-    </div>
-    <!---------Footer-------------->
-    <footer class="border-top footer text-muted" style="background-color:white; margin-top:10px">
-        <div class="container-fluid">
-            &copy; 2025 - ShriAITech -All Rights Reserved <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> 
+
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Cloud Solutions</li>
+                    <li>AI & Machine Learning</li>
+                    <li>App Development</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p>Hyderabad, India</p>
+                <p>Email: info@shriaitech.in</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © @DateTime.Now.Year Shri AI Tech. All rights reserved.
         </div>
     </footer>
-    <!---------Script-------------->
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

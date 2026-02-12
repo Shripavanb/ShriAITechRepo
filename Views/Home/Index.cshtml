@@ -1,303 +1,100 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
-<link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
-
-<div>
-<!-----------------Row1-Top --------------------------------->
-    <div class="row" style="padding-left:6px; padding-right:6px">
-        <img src="~/img/HomePage_LandingImage5.png" />
-    </div>
-    <br />
- <!------------------Row2--------------------------------->
- <div class="row" style="padding-left:6px; padding-right:6px" >
-       <video autoplay="autoplay" muted loop>
-       <source src="~/Videos/Innovation_New.mp4" type= "video/mp4" />
-       </video>
-</div>
-<br />
-<!------------------Row3--------------------------------->
-    <div class="container-fluid row3_Servicesbg" >
-        <div class="text-center">
-        <h2>Services</h2>
-        <h4>What we offer</h4>
-        </div>
-        <br>
-    <div class="row">
-    <div class="col-md-4 card">
-                <img src="~/img/Services/Get_Started_img1.png" alt="Description" class="card-img">
-                <div class="card-content">
-                    <h2 class="card-title">Getting started</h2>
-                    <p class="card-body">Get in touch</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-    </div>
-    <div class="col-md-4 card">
-                <img src="~/img/Services/WebDevelopment_img.png" alt="Description" class="card-img">
-                <div class="card-content">
-                    <h2 class="card-title">Web Development</h2>
-                    <p class="card-body"> We are here to Help build your website, with our professional and expert team of developers.</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-      </div>
-    <div class="col-md-4 card">
-                <img src="~/img/Services/WebHosting_img.png" alt="Description" class="card-img">
-                <div class="card-content">
-                    <h2 class="card-title">Web Hosting</h2>
-                    <p class="card-body">We can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-    </div>
-</div>
-</div>
-    <br />
-<!------------------Row4--------------------------------->
-  <div class="container-fluid row4_Servicesbg">
-
-
-  <div class="row" >
-    <div class="col-md-4 card">
-                <img src="~/img/Services/SoftwareServices_img.png" alt="Description" class="card-img">
-                <div class="card-content">
-                    <h2 class="card-title">Software Services</h2>
-                    <p class="card-body">Get in touch</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-    </div>
-    <div class="col-md-4 card">
-                <img src="~/img/Services/AppDevelopment_img.png" alt="Description" class="card-img">
-                <div class="card-content">
-                    <h2 class="card-title">App Development</h2>
-                    <p class="card-body">We are here to Help build your Apps, with our professional and expert team of developers.</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-    </div>
-    <div class="col-md-4 card">
-                <img src="~/img/Services/AI_ML_img.png" alt="Description" class="card-img">
-                <div class="card-content">
-                    <h2 class="card-title">AI ML Advanced Services and Support</h2>
-                    <p class="card-body">We are here to Help build and Support your AI, ML and Advanced Tech, with our professional and expert team of developers.</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-    </div>
- 
-</div>
-<div class="row">
-         <div class="col-md-4 card">
-                <img src="~/img/Services/CloudComputing_img.png" alt="Description" class="card-img">
-                <div class="card-content">
-                    <h2 class="card-title">Cloud Services </h2>
-                    <p class="card-body"> We are here to Help build and Support cloud based web and Application development, with our professional and expert team of developers.</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-         </div>
-         <div class="col-md-4"></div>
-         <div class="col-md-4"></div>
-</div>
-</div>
-    <br />
-<!---------------------Our Clients-------------------->
-    <div class="container-fluid ourclientsbg">
-        <div class="row">
-        <h2 class="text-center">Our Clients</h2>
-         <div class="col-md-4 card">
-                <a href="https://color-bytes.in/" target="_blank"> <img src="~/img/Colorbytes_Logo.jpg" alt="Description" class="card-img"></a>
-                <div class="card-content">
-                    <h2 class="card-title">🎨 ColorBytes</h2>
-                    <p class="card-body">
-                        ColorBytes is a passionate Art Deliver.Services what we offer 
-                         <ul>
-                            <li>We Provide Paint work</li>
-                            <li>We provide Art work and custom design printing on T-Shirts</li>
-                            <li>We Provide Birthday Gift Wrapping</li>
-                         </ul>                    
-                    </p>
-                    <a href="https://color-bytes.in/" target="_blank" class="card-link">Read more</a>
-                </div>
-            </div>
-        <div class="col-md-4">
-         </div>
-            <div class="col-md-4">
-            </div>
-        
-  </div>
-
-    </div>
-    <br />
-    <br />
-    <br />
-    <!---------Our Support Service-------------------->
-    <div class="container-fluid oursupportservicebg">
-        <div class="row ">
-            <h2 class="text-center">Our Support Services</h2>
-       <div class="col-md-4 card">
-            <a href="https://cloudgenzapp-gee6h8hqdcfdgma0.canadacentral-01.azurewebsites.net/" target="_blank"> <img src="~/img/cloudgenz_logo.jpg" alt="Description" class="card-img"></a>
-            <div class="card-content">
-                <h2 class="card-title">Cloud GenZ</h2>
-                <p class="card-body">Cloud GenZ is a passionate student-led community, dedicated to sharing knowledge and resources in cutting-edge tech fields 
-                    like AWS, Cloud Computing, DevOps and Java.
-                </p>
-                <a href="https://cloudgenzapp-gee6h8hqdcfdgma0.canadacentral-01.azurewebsites.net/" target="_blank" class="card-link">Read more</a>
+<link href="~/css/index.css" rel="stylesheet" />
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container hero-container">
+        <div class="hero-text">
+            <h1>Innovative Digital Solutions Powered by AI</h1>
+            <p>
+                Shri AI Tech delivers modern web, cloud, and AI-powered
+                solutions to help businesses grow faster and smarter.
+            </p>
+            <div class="hero-buttons">
+                <a asp-page="/Portfolio" class="btn-primary">View Portfolio</a>
+                <a asp-page="/Contact" class="btn-secondary">Contact Us</a>
             </div>
         </div>
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-        </div>
-</div>
-</div>
-    <br />
-    <br />
-    <br />
-<!--------------What Our Customers Say--------------------------------------->
-<div class="container-fluid" style="background-color:white">
-  <div class="row text-center">
-<h2>What our customers say</h2>
-<div id="myCarousel" class="carousel slide text-center; rowcustomersay" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Vaishnavi, CEO & Founder, ColorBytes</span></h4>
-        </div>
-        <div class="item">
-            <h4>"One word... WOW!!"<br><span style="font-style:normal;">Lohitha M, Founder, CloudGenZ</span></h4>
-        </div>
-@*         <div class="item">
-            <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Vijay B, Owner & Event Organiser, GayathriEvents</span></h4>
-        </div> *@
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-</div>
-<br />
-<br /></div>
-    <br />
-<!------------------Contact US------------------------------->
-<div class="container-fluid bg-grey; rowcontactus">
-    <h2 class="text-center">Contact</h2>
-    <div class="row">
-       <h2>Contact us and we'll get back to you within 24 hours.</h2>
-        <div class="col-sm-5">
-                <h3 class="text-white"><span class="glyphicon glyphicon-map-marker text-warning p-3"></span> Hyderabad, Telangana, India</h3>
-                <h3 class="text-white"><span class="glyphicon glyphicon-phone text-white p-3"></span> +91 8374499001</h3>
-                <h3 class="text-white"><span class="glyphicon glyphicon-envelope text-white p-3"></span> shripavanb@shriaitech.in</h3>
-        </div>
-        <div class="col-sm-7">
-            <div class="row">
-                <form class="form">
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                        </div>
-            
-                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="10"></textarea><br>
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <button class="btn btn-default pull-right" type="submit">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                
+        <div class="hero-image">
+            <img src="~/img/Services - Copy.png" alt="Tech Illustration" />
         </div>
     </div>
-</div>
-</div>
-<br />  
-<!--------------Google Map------------------------>
+</section>
 
-<div class="container-fluid">
-        <h2 class="text-center" style="font-weight:200">Locations</h2>
+<!-- ABOUT SECTION -->
+<section class="about">
+    <div class="container about-container">
+        <div class="about-text">
+            <h2>Who We Are</h2>
+            <p>
+                We are a technology-driven company focused on building scalable,
+                secure, and intelligent digital platforms. From startups to enterprises,
+                we deliver tailored solutions that create measurable impact.
+            </p>
+        </div>
+    </div>
+</section>
 
-    <div class="row">
-        <img src="~/img/ShriAITech MapLocations4.png" />
-       @*      <div class="col-sm-5">
-            <h2 class="text-center">Hyderabad, India</h2>
-            <h3 class="text-center"><a href="https://shriaitech.in/">shriaitech.in</a></h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1902.4492553329585!2d78.47491223881039!3d17.512357495849084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9aa9b4520c11%3A0x8f22c7a13b3885dc!2sPipe%20Line%20Rd%2C%20Satellite%20Township%2C%20Santa%20Sriram%20Estates%2C%20Jeedimetla%2C%20Hyderabad%2C%20Telangana%20500067!5e0!3m2!1sen!2sin!4v1748584317643!5m2!1sen!2sin" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- SERVICES SECTION -->
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">Our Core Services</h2>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>High-performance websites & web applications built using modern frameworks.</p>
             </div>
-            <div class="col-sm-2">
-                </div>
-            <div class="col-sm-5">
-                <h2 class="text-center">Stevenage, UK</h2>
-                <h3 class="text-center" ><a href="https://shriaitech.uk/" target="_blank">shriaitech.uk</a></h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184.02949849633157!2d-0.16998306004328245!3d51.92175647984545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48762916a02a64d9%3A0x4341e6e1cebe29fa!2sStevenage%2C%20UK!5e1!3m2!1sen!2sin!4v1753712624588!5m2!1sen!2sin" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div> *@
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.979184047233!2d78.48765887603234!3d17.508507083399454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b7e4eb5ef63%3A0xde8d3124fb1112bb!2sShri%20AI%20Tech!5e0!3m2!1sen!2sin!4v1763361959316!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </div>
-  
-</div>
-<br /> <br />
-</div><!----top shell-->
-<!---------------Script------------------------------------------------->
-<script>
-    const formE1 = document.querySelector('.form');
-    formE1.addEventListener('submit', event=>{
-        event.preventDefault();
-        const formData = new FormData(formE1);
-        formData.get('name');
-        formData.get('email');
 
-        const data = Object.formEntries(formData);
+            <div class="service-card">
+                <h3>Cloud Solutions</h3>
+                <p>Secure cloud infrastructure, deployment & scalable architecture.</p>
+            </div>
 
-          fetch( 'https://docs.google.com/document/d/1b1o0-KLWiz6fbvSRgREwBKet3DGKPyS8Bn2wDoxZ29k/edit?usp=sharing',
-  {
-      method:'POST',
-      headers:{
-      'Content-Type':'application/json'
-      },
-      body:JSON.stringify(data)
-  });
-    });
- 
-      /*-------Slide Show---------------------------------*/
-    $(document).ready(function(){
-     
-      $(window).scroll(function() {
-        $(".slideanim").each(function(){
-          var pos = $(this).offset().top;
+            <div class="service-card">
+                <h3>AI & Machine Learning</h3>
+                <p>Smart automation, predictive analytics & intelligent systems.</p>
+            </div>
 
-          var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
-              $(this).addClass("slide");
-            }
-        });
-      });
-    })
-    /*-------Google Map---------------------------------*/
-    function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(17.512,78.47628),
-      zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-    /*-------Landing video row 2---------------------------------*/
-   var video=getElementsByTagName('video');
-    function removeControls(video){
-      video.removeAttribute('controls');
-    }
-    window.onload=removeControls(video);
-     window.onload=onloadstart(video);
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+            <div class="service-card">
+                <h3>Mobile App Development</h3>
+                <p>Android & cross-platform mobile apps for seamless user experiences.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-us">
+    <div class="container">
+        <h2 class="section-title">Why Choose Shri AI Tech?</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <h4>✔ Modern Technology</h4>
+                <p>We use the latest frameworks & scalable architecture.</p>
+            </div>
+
+            <div class="why-card">
+                <h4>✔ Secure & Reliable</h4>
+                <p>Security-first development and enterprise-grade reliability.</p>
+            </div>
+
+            <div class="why-card">
+                <h4>✔ Client-Focused</h4>
+                <p>We build solutions aligned with your business goals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+    <div class="container text-center">
+        <h2>Ready to Build Something Powerful?</h2>
+        <p>Let’s transform your ideas into scalable digital products.</p>
+        <a asp-page="/Contact" class="btn-primary">Start Your Project</a>
+    </div>
+</section>
