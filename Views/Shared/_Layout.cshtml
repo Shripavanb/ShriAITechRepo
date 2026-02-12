@@ -20,15 +20,18 @@
                 <a asp-page="/Index">Shri<span>AI</span>Tech</a>
             </div>
 
-            <nav class="nav-menu">
-                <a asp-page="/Index">Home</a>
-                <a asp-page="/Portfolio">Portfolio</a>
-                <a asp-page="/Services">Services</a>
-                <a asp-page="/Contact">Contact</a>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <a asp-action="Index">Home</a>
+                <a asp-action="Products">Products</a>
+                <a asp-action="Portfolio">Portfolio</a>
+                <a asp-action="Services">Services</a>
+                <a asp-action="ContactUs">Contact</a>
+                <a asp-action="AboutUs">AboutUs</a>
+                <a asp-action="JoinUs">JoinUs</a>
             </nav>
 
             <div class="nav-cta">
-                <a asp-page="/Contact" class="btn-primary">Get Quote</a>
+                <a asp-action="ContactUs" class="btn-primary">Get Quote</a>
             </div>
         </div>
     </header>
