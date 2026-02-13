@@ -1,105 +1,107 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<link href="~/css/Product.css" rel="stylesheet" />
 
-<div>
-    <h1 style="text-align:center">Our Products and Services </h1>
-    <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card">
-                    <a href="https://shrifoods.in/" target="_blank">
-                        <img src="~/img/ShriFoods/NewLogo_Small_1.png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">Shri Foods</h4>
-                        <h4 class="card-title">HomeFoods</h4>
-                        <br/>
-                        <h3>Our Home Products:</h3>
-                        <ul class="text-opacity-10" style="margin-left:40px">
-                            <li>Multi Grain Atta</li>
-                            <li>Wheat Grain Atta</li>
-                            <li>Rice Grain Atta</li>
-                            <li>Ragi Grain Atta</li>
-                            <li>Jowar Grain Atta</li>
-                            <li>Maida Atta</li>
-                            <li>Bajra Grain Atta</li>
-                            <li>Besan/Chana Atta</li>
-                            <li>Sesame seeds</li>
-                            <li>Idli Rava</li>
-                            <li>Upma Rava </li>
-                            <li>kesari Rava </li>
-                            <li>Urad Dal/Minapappu </li>
-                         </ul>
-                        <h6>Try our home made, pure and fresh grain atta(s)</h6>
-                        Website:<a href="https://shrifoods.in/" target="_blank">shrifoods.in</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <a href="https://shrigo.in/" target="_blank">
-                        <img src="~/img/ShriGo/ShriGo_Logo11.png" class="card-img-top" alt="...">
+<div class="container py-5">
+    <h1 class="text-center mb-5 fw-bold">Our Products & Services</h1>
+
+    <div class="row g-4">
+
+        <!-- Shri Foods -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 product-card">
+                <a href="https://shrifoods.in/" target="_blank">
+                    <img src="~/img/ShriFoods/NewLogo_Small_1.png"
+                         class="card-img-top product-img"
+                         alt="Shri Foods Logo">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h4 class="fw-bold text-center">Shri Foods</h4>
+                    <p class="text-muted text-center">Pure & Fresh Home Products</p>
+
+                    <h6 class="mt-3 fw-semibold">Our Products:</h6>
+                    <ul class="product-list">
+                        <li>Multi Grain Atta</li>
+                        <li>Wheat Grain Atta</li>
+                        <li>Rice Grain Atta</li>
+                        <li>Ragi, Jowar & Bajra Atta</li>
+                        <li>Besan / Chana Atta</li>
+                        <li>Sesame Seeds & Rava</li>
+                        <li>Urad Dal</li>
+                    </ul>
+                    <br />
+                    <div class="mt-auto">
+                        <a href="https://shrifoods.in/" target="_blank"
+                           class="btn shriaitech-btn w-100 mt-3">
+                            Visit Website
                         </a>
-                    <div class="card-body">
-                        <h4 class="card-title">Shri Go</h4>
-                        <h4 class="card-title">Travel Service</h4>
-                        <br />
-                        <h5>We are delighted to help you with all your Travel needs to go to your desired destination.</h5>
-                        <br />
-                        <h5>Transform your ideas into travel experience and peacfully enjoy the nature with ShriGo</h5>
-                        <br />
-                        <h5>
-                            At ShriGo, we help customers unlock the full comfortable single, family and business ride with safety and security.
-                            We build your journey that feels safe, secure and peaceful
-                            .
-                        </h5>
-                        <br />
-                        <h3>Our Services Include:</h3>
-                        <br />
-                        <ul class="text-opacity-25" style="margin-left:40px">
-                            <li>Cab service</li>
-
-                            <li>Cab Rental services</li>
-
-                        </ul>
-                        <br />
-                        Website:<a href="https://shrigo.in/" target="_blank">shrigo.in</a>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <a href="https://shririse.in/" target="_blank">
-                        <img src="~/img/shririse/newlogo_small.png" class="card-img-top" alt="..." />
-                        </a>
-                    <div class="card-body">
-                        <h4 class="card-title">Shri Rise</h4>
-                        <h4>Real Estate Service </h4>
-                        <br />
-                        <h3>Our Services Include:</h3>
-                        <br />
-                        <ul class="text-opacity-25" style="margin-left:40px">
-                            <li>🏡 Residential Property Solutions</li>
-
-                            <li>📍 Location Scouting & Property Identification</li>
-
-                            <li>🏗 Construction & Development</li>
-
-                            <li>💼 Real Estate Consultation</li>
-
-                            <li> 📑 Legal Assistance</li>
-
-                            <li>📈 Investment Opportunities</li>
-                        </ul>
-                        <br />
-                        Website:<a href="https://shririse.in/" target="_blank">shririse.in</a>
-                    </div>
+                    <br />
                 </div>
             </div>
         </div>
+        <br />
+        <!-- Shri Go -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 product-card">
+                <a href="https://shrigo.in/" target="_blank">
+                    <img src="~/img/ShriGo/ShriGo_Logo11.png"
+                         class="card-img-top product-img"
+                         alt="Shri Go Logo">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h4 class="fw-bold text-center">Shri Go</h4>
+                    <p class="text-muted text-center">Travel & Cab Services</p>
+
+                    <p>
+                        Safe, secure and comfortable travel solutions for
+                        single, family and business rides.
+                    </p>
+
+                    <ul class="product-list">
+                        <li>Cab Services</li>
+                        <li>Cab Rental Services</li>
+                    </ul>
+                    <br />
+                    <div class="mt-auto">
+                        <a href="https://shrigo.in/" target="_blank"
+                           class="btn shriaitech-btn w-100 mt-3">
+                            Visit Website
+                        </a>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <br />
+        <!-- Shri Rise -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 product-card">
+                <a href="https://shririse.in/" target="_blank">
+                    <img src="~/img/shririse/newlogo_small.png"
+                         class="card-img-top product-img"
+                         alt="Shri Rise Logo">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h4 class="fw-bold text-center">Shri Rise</h4>
+                    <p class="text-muted text-center">Real Estate Services</p>
+
+                    <ul class="product-list">
+                        <li>Residential Property Solutions</li>
+                        <li>Location Scouting</li>
+                        <li>Construction & Development</li>
+                        <li>Legal Assistance</li>
+                        <li>Investment Opportunities</li>
+                    </ul>
+                    <br />
+                    <div class="mt-auto">
+                        <a href="https://shririse.in/" target="_blank"
+                           class="btn shriaitech-btn w-100 mt-3">
+                            Visit Website
+                        </a>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
-

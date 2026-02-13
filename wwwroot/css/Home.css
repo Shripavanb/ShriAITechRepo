@@ -120,10 +120,10 @@
     }
 
 .card-img {
-    padding-top:10px;    
-    width: 100%;
+    padding-top: 10px;
+    width: 120px;
     height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures the image covers the area nicely */
+    /*object-fit: cover; /* Ensures the image covers the area nicely */
 }
 
 .card-content {
